@@ -1,0 +1,14 @@
+def lar_enen(arr):
+    max_eve = arr[0]
+    max_odd = arr[0]
+    n=len(arr)
+    for i in range(1,n):
+        if arr[i]>max_eve and arr[i]%2==0:
+            max_eve=arr[i]
+        if arr[i]>max_odd and arr[i]%2!=0:
+            max_odd=arr[i]
+    print(max_eve)
+    print(max_odd)
+
+arr=[34,54,24,32,33,67,92,21,37,4322]
+lar_enen(arr)
